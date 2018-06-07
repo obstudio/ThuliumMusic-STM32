@@ -1,4 +1,4 @@
-#MDK
+# Keil MDK-ARM μVision5
 /MDK-ARM/*/*.crf
 /MDK-ARM/*/*.d
 /MDK-ARM/*/*.o
@@ -12,9 +12,6 @@
 /MDK-ARM/JLinkLog.txt
 /MDK-ARM/*.lst
 
-#Cube
+# STM32CubeMX
 /.mxproject
 /mx.scratch
-
-#VSCode
-/.vscode/

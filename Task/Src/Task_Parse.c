@@ -47,6 +47,12 @@ void Task_Parse(void *parameters)
             NoteToken.DotCount = 0;
             NoteToken.hasTie = 0;
             break;
+        case '%':
+            ParseNote(&NoteToken);
+            NoteToken.DurationInBeats = 1;
+            NoteToken.DotCount = 0;
+            NoteToken.hasTie = 0;
+            break;
         case '\'':
             NoteToken.OctavesCount++;
             break;

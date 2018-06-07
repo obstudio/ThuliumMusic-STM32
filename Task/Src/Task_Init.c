@@ -8,8 +8,8 @@ void Task_Init(void *parameters)
 {
     taskENTER_CRITICAL();
 
-    xTaskCreate(Task_AudioPlay, "TaskAudioPlay", 200, NULL, 0, &TaskHandle_AudioPlay);
-    xTaskCreate(Task_Parse, "TaskParse", 200, NULL, 0, &TaskHandle_Parse);
+    xTaskCreate(Task_AudioPlay, "TaskAudioPlay", 200, NULL, 3, &TaskHandle_AudioPlay);
+    xTaskCreate(Task_Parse, "TaskParse", 2000, NULL, 3, &TaskHandle_Parse);
 
     vTaskDelete(NULL);
     taskEXIT_CRITICAL();
